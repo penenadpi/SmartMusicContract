@@ -1,0 +1,55 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/hasValue>
+      a       rdf:Property , rdfs:Resource ;
+      rdfs:domain <http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter> ;
+      rdfs:label "hasValue"@en ;
+      rdfs:range rdfs:Literal .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/hasName>
+      a       rdf:Property , rdfs:Resource ;
+      rdfs:domain <http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter> ;
+      rdfs:label "hasName"@en ;
+      rdfs:range rdfs:Literal .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/hasRole>
+      a       rdf:Property , rdfs:Resource ;
+      rdfs:domain <http://www.tasorone.com/tsc/resources/SmartMusicContract/Participant> ;
+      rdfs:label "hasRole"@en ;
+      rdfs:range <http://www.tasorone.com/tsc/resources/SmartMusicContract/Role> .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/Participant>
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:label "Participant"@en .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/hasParameter>
+      a       rdf:Property , rdfs:Resource ;
+      rdfs:domain <http://www.tasorone.com/tsc/resources/SmartMusicContract/Contract> ;
+      rdfs:label "hasParameter"@en ;
+      rdfs:range <http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter> .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract>
+      a       <http://rdfs.org/ns/void#Dataset> ;
+      <http://xmlns.com/foaf/0.1/maker>
+              <http://www.tasorone.com/tsc/resources/TasorPrincipals/penenadpi> .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/Contract>
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:label "Contract"@en .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter>
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:label "Parameter"@en .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/hasParticipant>
+      a       rdf:Property , rdfs:Resource ;
+      rdfs:domain <http://www.tasorone.com/tsc/resources/SmartMusicContract/Contract> ;
+      rdfs:label "hasParticipant"@en ;
+      rdfs:range <http://www.tasorone.com/tsc/resources/SmartMusicContract/Participant> .
+
+<http://www.tasorone.com/tsc/resources/SmartMusicContract/Role>
+      a       rdfs:Resource , rdfs:Class ;
+      rdfs:label "Role"@en .
