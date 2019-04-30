@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="http://localhost:8080/RestLidar/Inserter"><div>
+CaseDescription: <input type="text" name="CaseDescription" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
+</div><div>
+NewInformation: <input type="text" name="NewInformation" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
+</div><div>
+Response: <input type="text" name="Response" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
+</div><div>
+Hypothesis: <input type="text" name="Hypothesis" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
+</div>  <input type="submit" value="Submit">
+</form> 
+<script>
+
+function duplicate(event) { 
+  var x = event.target;
+  var par=x.parentElement.childNodes[0];
+  var par2=par.cloneNode(true);
+  var par3=x.parentElement.childNodes[1];
+  var par4=par3.cloneNode(true);
+  var par2_container=document.createElement('div');  
+  var par4_container=document.createElement('div');
+  
+  
+// Append the cloned <li> element to <ul> with id="myList1"
+par2_container.appendChild(par2);
+
+par4_container.appendChild(par4);
+
+
+par.parentElement.appendChild(par2_container);
+
+
+par.parentElement.appendChild(par4_container);  
+
+
+	
+}
+
+
+</script>
+</body>
+</html>
