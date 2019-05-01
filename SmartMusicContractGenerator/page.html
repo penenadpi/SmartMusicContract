@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="http://localhost:8080/SmartMusicContract/TripletInsert">  <input type="submit" value="Submit">
+<div>
+<select name="parameter_name">
+    <option value="StartDate">StartDate</option>
+    <option value="EndDate">EndDate</option>
+    <option value="Price">Price</option>
+    <option value="Sender">Sender</option>
+    <option value="Receiver">Receiver</option>
+</select><input type="text" name="parameter_value" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
+<div>
+</form> 
+<script>
+
+function duplicate(event) { 
+  var x = event.target;
+  var par=x.parentElement.childNodes[1];
+  var par2=par.cloneNode(true);
+  var par3=x.parentElement.childNodes[2];
+  var par4=par3.cloneNode(true);
+  var par2_container=document.createElement('div');  
+  
+  
+par2_container.appendChild(par2);
+
+par2_container.appendChild(par4);
+
+
+par.parentElement.appendChild(par2_container);
+
+
+
+
+	
+}
+
+
+</script>
+</body>
+</html>
