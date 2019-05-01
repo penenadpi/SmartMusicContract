@@ -2,15 +2,52 @@
 <html>
 <body>
 
-<form action="http://localhost:8080/RestLidar/Inserter"><div>
-CaseDescription: <input type="text" name="CaseDescription" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
-</div><div>
-NewInformation: <input type="text" name="NewInformation" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
-</div><div>
-Response: <input type="text" name="Response" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
-</div><div>
-Hypothesis: <input type="text" name="Hypothesis" value="Insert Text Here">   <button type="button" onclick="duplicate(event)">ADD NEW</button> </input>  <br/> 
-</div>  <input type="submit" value="Submit">
+<form action="http://localhost:8080/ContractInsertion/Insert">
+   <button type="button" onclick="duplicate(event)">New parameter</button>   <br/> 
+
+<div>
+  <select name="parameter_name">
+      <option value="END">Sender</option>
+    <option value="END">Start Date</option>
+    <option value="START">End Date</option>
+    <option value="PRICE">Price</option>
+  </select>
+<input type="text" name="parameter_value" value=""></input>
+</div>
+<div>
+  <select name="parameter_name">
+    <option value="END">Receiver</option>
+    <option value="END">Start Date</option>
+    <option value="START">End Date</option>
+    <option value="PRICE">Price</option>
+  </select>
+<input type="text" name="parameter_value" value=""></input>
+</div>
+<div>
+  <select name="parameter_name">
+    <option value="END">Start Date</option>
+    <option value="START">End Date</option>
+    <option value="PRICE">Price</option>
+  </select>
+<input type="text" name="parameter_value" value=""></input>
+</div>
+<div>
+  <select name="parameter_name">
+    <option value="END">Start Date</option>
+    <option value="START">End Date</option>
+    <option value="PRICE">Price</option>
+  </select>
+<input type="text" name="parameter_value" value=""></input>
+</div>
+
+<div>
+  <select name="parameter_name">
+    <option value="END">Start Date</option>
+    <option value="START">End Date</option>
+    <option value="PRICE">Price</option>
+  </select>
+<input type="text" name="parameter_value" value=""></input>
+</div>
 </form> 
 <script>
 
