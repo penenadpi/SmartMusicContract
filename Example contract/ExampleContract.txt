@@ -1,0 +1,12 @@
+pragma solidity ^0.4.21;
+contract SampleLibrary{
+	event Sent(address from, address to, uint amount);
+	function send() public {
+		if(now>StartDate && now<EndDate){     
+			if (balances[Songwriter] < Price) return;
+				balances[Songwriter] -= Price;
+				balances[Loopmaker] += Price;
+				emit Sent(Songwriter, Loopmaker, Price);
+		}
+	}
+}

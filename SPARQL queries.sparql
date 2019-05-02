@@ -1,0 +1,14 @@
+PREFIX smc: <http://www.tasorone.com/tsc/resources/SmartMusicContract/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+INSERT DATA
+{ GRAPH <http://www.example.com/smcdef>
+{ <http://www.example.com/smcdef/Receiver>  rdf:type smc:Parameter}	
+};
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntaxns#>  
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX smc:<http://www.tasorone.com/tsc/resources/SmartMusicContract/>
+SELECT DISTINCT ?v
+WHERE {
+GRAPH <http://www.example.com/smcdemo> {<http://www.example.com/smcdemo/StartDate> smc:hasValue ?v.} }

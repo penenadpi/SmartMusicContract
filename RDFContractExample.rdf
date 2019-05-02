@@ -1,0 +1,32 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.tasorone.com/tsc/resources/SmartMusicContract/" > 
+  <rdf:Description rdf:about="http://www.example.com/smcdemo/Sender">
+    <j.0:hasValue>Sender1</j.0:hasValue>
+    <rdf:type rdf:resource="http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.com/smcdemo/Price">
+    <j.0:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</j.0:hasValue>
+    <rdf:type rdf:resource="http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.com/smcdemo/Receiver">
+    <j.0:hasValue>Receiver1</j.0:hasValue>
+    <rdf:type rdf:resource="http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.com/smcdemo/StartDate">
+    <j.0:hasValue>2019/04/30</j.0:hasValue>
+    <rdf:type rdf:resource="http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.com/smcdemo/EndDate">
+    <j.0:hasValue>2021/04/30</j.0:hasValue>
+    <rdf:type rdf:resource="http://www.tasorone.com/tsc/resources/SmartMusicContract/Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.com/smcdemo/Contract1">
+    <j.0:hasParameter rdf:resource="http://www.example.com/smcdemo/Receiver"/>
+    <j.0:hasParameter rdf:resource="http://www.example.com/smcdemo/Sender"/>
+    <j.0:hasParameter rdf:resource="http://www.example.com/smcdemo/Price"/>
+    <j.0:hasParameter rdf:resource="http://www.example.com/smcdemo/EndDate"/>
+    <j.0:hasParameter rdf:resource="http://www.example.com/smcdemo/StartDate"/>
+    <rdf:type rdf:resource="http://www.tasorone.com/tsc/resources/SmartMusicContract/Contract"/>
+  </rdf:Description>
+</rdf:RDF>

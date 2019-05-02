@@ -1,0 +1,12 @@
+pragma solidity ^0.4.21;
+contract SampleLibrary{
+	event Sent(address from, address to, uint amount);
+	function send() public {
+		if(now>2019/04/30 && now<2021/04/30){     
+			if (balances[Sender1] < 1) return;
+				balances[Sender1] -=1;
+				balances[Receiver1] +=1;
+				emit Sent(Sender1, Receiver1, 1);
+		}
+	}
+}
